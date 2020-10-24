@@ -1,0 +1,12 @@
+﻿.sidebar {
+    background-color: coral;
+    display: none;
+    order: -1;
+    width: 25%;
+}
+
+@media screen and (min-width: 600px) {
+    .sidebar {
+        display: flex;
+    }
+}

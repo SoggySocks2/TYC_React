@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import '../custom.css'
 import { NavMenu } from './NavMenu';
+import { Sidebar } from './Sidebar';
+import { Home } from './Home';
+import { AboutUs } from './AboutUs';
 import { Footer } from './Footer';
 
 export class Layout extends Component {
@@ -8,13 +12,21 @@ export class Layout extends Component {
 
   render () {
       return (
-          <>
-          <NavMenu />
-              <Container>
-            {this.props.children}
-          </Container>
+
+          <Router>
+              <NavMenu />
+              <header>Header</header>
+              <div className="mainContainer">
+                  <Sidebar />
+                  <main className="main">
+                      <Switch>
+                          <Route path='/' exact component={Home} />
+                          <Route path='/aboutus' component={AboutUs} />
+                      </Switch>
+                  </main>
+              </div>
               <Footer />
-              </>
+          </Router>
     );
   }
 }
