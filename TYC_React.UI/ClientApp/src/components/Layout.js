@@ -4,7 +4,13 @@ import '../custom.css'
 import { NavMenu } from './NavMenu';
 import { Sidebar } from './Sidebar';
 import { Home } from './Home';
-import { AboutUs } from './AboutUs';
+import { Local_Area } from './Local_Area';
+import { Location } from './Location';
+import { Places_To_Go } from './Places_To_Go';
+import { Tariffs } from './Tariffs';
+import { Reviews } from './Reviews';
+import { Gallery } from './Gallery';
+import { Contact_Us } from './Contact_Us';
 import { Footer } from './Footer';
 
 export class Layout extends Component {
@@ -12,7 +18,6 @@ export class Layout extends Component {
 
   render () {
       return (
-
           <Router>
               <NavMenu />
               <header>Header</header>
@@ -21,7 +26,13 @@ export class Layout extends Component {
                   <main className="main">
                       <Switch>
                           <Route path='/' exact component={Home} />
-                          <Route path='/aboutus' component={AboutUs} />
+                          <Route path='/local_area' component={Local_Area} />
+                          <Route path='/location' component={Location} />
+                          <Route path='/places_to_go' component={Places_To_Go} />
+                          <Route path='/tariffs' component={Tariffs} />
+                          <Route path='/reviews' component={Reviews} />
+                          <Route path='/gallery' component={Gallery} />
+                          <Route path='/contact_us' component={Contact_Us} />                            
                       </Switch>
                   </main>
               </div>

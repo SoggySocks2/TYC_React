@@ -1,13 +1,13 @@
 ﻿import React, { Component } from 'react';
-import './AboutUs.css';
 
-export class AboutUs extends Component {
+export class Local_Area extends Component {
+    static displayName = Local_Area.name;
+
     render() {
         return (
             <>
-                About Us
+                <h1>Local Area</h1>
             </>
         );
     }
 }
-
