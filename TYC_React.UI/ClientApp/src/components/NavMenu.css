@@ -24,4 +24,6 @@ html {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-    
+.nav-link.text-dark-selected {
+    border: dashed 1px Red;
+}
