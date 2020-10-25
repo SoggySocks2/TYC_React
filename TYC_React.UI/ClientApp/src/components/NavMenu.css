@@ -1,29 +1,11 @@
-﻿.navbar {
-    display: flex;
-    flex-direction: column;
-    min-width: 100vw;
-    height: auto;
-    align-items: center;
-}
-a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-}
-
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
+﻿a.navLogo {
+    text-decoration: none;
+    font-family: 'Oswald', Verdana;
     font-size: 16px;
-  }
 }
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-.nav-link.text-dark-selected {
+.text-dark-selected {
     border: dashed 1px Red;
+}
+.nav {
+    overflow-y: hidden !important
 }

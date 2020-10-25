@@ -7,6 +7,9 @@ export class Home extends Component {
       return (
           <>
               <h1>Home</h1>
+              <p>asdsad
+              asdfsdf
+              sdgf</p>
           </>
     );
   }
